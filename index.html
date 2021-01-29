@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaptivity</title>
+    <style>
+        body{
+            background-color: #ddd;
+        }
+        .content{
+            width: 80%;
+            margin: 1em auto;
+            background-color: whitesmoke;
+            padding: 1em;
+            text-align: center;
+        }
+        .content article{
+            width: 45%;
+            border: 1px solid rgb(165, 157, 157);
+            padding: 0.5em;
+            margin-bottom: 0.75em;
+            display: inline-block;
+            text-align: left;
+        }
+        .content article:nth-child(even){
+            margin-right: .5em;
+        }
+        .content article:nth-child(odd){
+            margin-left: .5em;
+        }
+        @media (max-width: 1000px) {
+            .content article{
+                display: block;
+                width: auto;
+                margin-right:0 !important;
+                margin-left: 0 !important;
+            }
+        }
+        @media(max-width: 600px){
+            .content{
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="content">
+        <header>
+            <h1>Fresh articles</h1>
+        </header>
+        <article>
+            <h2>Article Title 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae autem ea at quam tempore ratione? Cum impedit doloribus minima voluptatum animi, iure quisquam odit vel modi quaerat, blanditiis error?</p>
+            <p>Illum quo sunt nulla ut, totam quia. Facilis itaque explicabo nobis quaerat atque, mollitia ipsum accusamus maxime doloremque cum repudiandae natus, fugiat laboriosam debitis temporibus error iure laudantium esse! Harum?</p>
+        </article>
+        <article>
+            <h2>Article Title 2</h2>
+            <p>Consequatur veritatis animi aperiam, voluptatibus doloribus suscipit et maiores, quaerat, beatae modi exercitationem nihil sit. Enim magnam autem sit doloremque vitae eius, adipisci dolorum reprehenderit a dignissimos culpa tempora laboriosam.</p>
+            <p>Pariatur totam quod nam similique repudiandae facere iste corrupti voluptatum hic cupiditate cumque nihil, tempore sunt in itaque suscipit minus incidunt nemo laudantium deleniti accusamus beatae! Optio error quas ipsum.</p>
+        </article>
+        <article>
+            <h2>Article Title 3</h2>
+            <p>Minus, ea nesciunt a expedita obcaecati nostrum consequatur, quos neque atque ex incidunt? Dolorum rerum vitae, repellendus voluptates aliquid eligendi laboriosam enim, debitis non similique illo. Iusto labore voluptatem optio.</p>
+            <p>Placeat laudantium nihil architecto repudiandae molestiae hic tenetur, quam perspiciatis? Quae iusto eos quia corrupti veritatis molestiae tenetur sit labore. Iusto adipisci doloremque eos odio similique sapiente perspiciatis asperiores tenetur!</p>
+        </article>
+        <article>
+            <h2>Article Title 4</h2>
+            <p>Nisi cumque dolorum amet magnam, eius quas accusantium consequuntur laudantium culpa iure. Necessitatibus incidunt totam ex quod iste laborum doloremque corporis eius laudantium! Repellat corporis voluptatem eum impedit earum eligendi.</p>
+            <p>Minima quia facere, facilis cumque nihil modi dolores tempore hic laudantium dolore. Beatae, facilis? Impedit doloremque amet, quaerat culpa autem earum, odio, doloribus atque quod nemo aperiam! Velit, sit ducimus.</p>
+        </article>
+        <footer>
+            <a href="#">Read more articles</a>
+        </footer>
+    </main>
+</body>
+</html>
